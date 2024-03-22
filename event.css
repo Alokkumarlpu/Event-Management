@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+:root{
+    --main-color:#2980b9;
+    --red:red;
+    --light-color:#777;
+    --light-bg:#eee;
+    --black:#2c3e50;
+    --white:#fff;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
+    --border:.1rem solid rgba(0,0,0,.3);
+
+}
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: #f0eeee;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    background: #013455;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.header img{
+    width: 80px;
+    height: 60px;
+}
+
+/* .header .logo{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color: van(--main-color);
+} */
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--red);
+}
+
+/* dropdown start */
+ul{
+    list-style: none;
+    
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: #000;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+/* dropdown end */
+
+.h{
+    border-top: 1rem solid var(--main-color);
+    border-bottom: 1rem solid var(--main-color);
+    background-color: var(--black);
+    color: #f0eeee;
+    text-align: center;
+    padding: 6rem 2rem;
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+/* section start */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+section .leftBox {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+/* Styling the background of 
+    left floating section */
+section .leftBox .content {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: .5s;
+}
+/* Styling the hover effect  
+    of left floating section */
+section .leftBox .content:hover {
+    background: #e91e63;
+}
+/* Styling the header of left 
+    floating section */
+section .leftBox .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+/* Styling the paragraph of 
+    left floating section */
+section .leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+/* Styling the three events section */
+section .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
+/* Styling the links of 
+the events section */
+section .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+/* Styling the lists of the event section */
+section .events ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+/* Styling the time class of events section */
+section .events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+/* Styling the hover effect
+    of events section */
+section .events ul li:hover .time {
+    background: #e91e63;
+}
+/* Styling the header of time 
+    class of events section */
+section .events ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+/* Styling the texts of time 
+class of events section */
+section .events ul li .time h2 span {
+    font-size: 30px;
+}
+
+/* Styling the details 
+class of events section */
+section .events ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+/* Styling the header of the 
+details class of events section */
+section .events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+/* Styling the lists of details 
+class of events section */
+section .events ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+/* Styling the links of details
+class of events section */
+section .events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5px solid #262626;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+/* Styling the details class's hover effect */
+section .events ul li .details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
+.submit-btn{
+    width: 50%;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+  }
+
+/* section end */
+
+/* footer section */
+
+.footer .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    gap:1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.footer .grid .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+
+}
+
+.footer .grid .box a{
+    display: block;
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    color:var(--light-color)
+}
+.footer .grid .box a i{
+    color: var(--main-color);
+    margin-right: .8rem ;
+    transition: .2s linear;
+}
+.footer .grid .box a:hover i{
+    margin-right: 2rem;
+}
+.footer .credit{
+    text-align: center;
+    padding:3rem 2rem;
+    background-color: var(--white);
+    font-size: 2rem;
+    color: var(--light-color);
+    line-height: 1.5rem;
+}
+.footer .credit span{
+    color: var(--main-color);
+    text-transform: capitalize;
+
+}
+body{
+    background: brown;
+}
+@media (max-width:991px){
+    html{
+        font-size:55%;
+    }
+    .section-title{
+        font-size: 5rem;
+    }
+}
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top:99%;left:0;right: 0;
+        border-top:var(--border) ;
+        background-color: var(--white);
+        padding: 1rem .5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+
+
+}
+.header .flex .navbar.active{
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.header .flex .navbar a{
+    display: block;
+    padding: 1.5rem 2rem;
+
+}
+.category .box-container{
+    grid-template-columns: repeat(auto-fit,16.5rem);
+}
+.category .box-container .box{
+    flex-flow: column;
+    text-align: center;
+}
+.section-title{
+    font-size: 4rem;
+    padding: 4rem 2rem;
+}
+}
+@media (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+    .section-title{
+        font-size: 3.5rem;
+    }
+}
+
+/* footer section end */
